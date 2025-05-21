@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness on Mass Deportation</title>
+    <link rel="icon" href="favicon-official.ico?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="hero text-white flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-8xl font-bold">The Impact of Mass Deportation</h1>
+            <p class="mt-6 text-2xl">Understanding the Impact and Fighting for Change</p>
+            <div class="click-me-container">
+                <p class="click-me-text">Click Me!</p>
+                <img src="arrow.png" alt="Arrow pointing to button" class="click-me-arrow">
+            </div>
+            <button id="learn-button" class="mt-6 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Learn More</button>
+        </div>
+    </header>
+
+    <main class="p-10 grid grid-cols-1 md:grid-cols-2 gap-8" style="background-image: linear-gradient(rgba(102, 28, 29, 2), rgba(255, 255, 255, 1));">
+        <section class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+            <img src="immigrants.jpg" alt="Overview Image" class="mb-4 rounded-lg shadow-md" >
+            <p class="text-gray-700">Mass deportation policies have had significant impacts on families, communities, and the broader social fabric. This site aims to shed light on the statistics, real stories, and historical context of mass deportation, empowering you to understand and act.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Statistics & Economic Impact</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>One-time deportation of 13.3 million people would cost at least $315 billion, while long-term deportation would cost $88 billion annually. Over a decade, the cost is estimated at $967.9 billion.</li>
+                <li>The cost exceeds budgets for key national programs such as NASA, child nutrition, and cancer research.</li>
+                <li>Disruption to industries like construction, agriculture, and hospitality.</li>
+                <li>US GDP would shrink by 4.2% to 6.8%, comparable to the Great Recession.</li>
+                <li>Loss of tax contributions: $46.8 billion in federal taxes, $29.3 billion in state and local taxes, and $22.6 billion to Social Security.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Human Impact & Legal Concerns</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>4 million mixed-status families would be separated, affecting 5.1 million US citizen children, leading to emotional and financial hardship.</li>
+                <li>Trump’s administration deported at least 3 US citizen children (ages 2, 4, and 7); the 2-year-old New Orleans-born toddler was receiving cancer treatment before deportation</li>
+                <li>Judge Terry Doughterty of the Western District of Louisiana stated, “Of course it is illegal and unconstitutional to detain or recommend deportation of a US citizen.” He criticized the government for deporting a citizen without a meaningful process.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">International Impact</h2>
+            <img src="salvador.jpg" alt="International Impact Image" class="mb-4 rounded-lg shadow-md">
+            <p class="text-gray-700">Since the start of 2025, there have been over 350 deportation flights. On March 15, Trump invoked the 1798 Alien Enemies Act to deport alleged gang members from Venezuela to El Salvador, even if it wasn't their country of origin.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-2xl font-semibold mb-4">Real Impacts</h2>
+            <p class="text-gray-700 italic mb-4">"It's too much, I don't like the way he is deporting everybody. I understand his reasoning but there are better ways to go about this"</p> 
+            <p class="text-gray-700 italic mb-4">"They're separating hard working, honest people who've escaped from turmoil, only to get sent back?"</p>
+            <p class="text-gray-700 italic mb-4">"Every day there's a chance that ICE will arrest me or someone in my family. They're even deporting U.S. citizens, I'm pretty sure they can't do that."</p>
+            <p class="text-gray-700 italic mb-4">"Trump is a very powerful person, all we can do is pray and protest."</p>
+            <p></p>
+            <p class="text-gray-700 italic mb-4 font-bold" style="text-align: left; margin-left: 33%;">-Eliezer Rodriguez</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-2xl font-semibold mb-4">Projected US Economy Decrease vs The Great Recession (2008)</h2>
+            <p class="text-gray-700">The graph below shows the projected decrease in the US economy due to mass deportation compared to if the Great Recession in 2008 happened again. Values are  not exact and are for illustrative purposes only.</p>
+            <canvas id="lineGraph" width="400" height="200"></canvas>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-2xl font-semibold mb-4">See the Injustice</h2>
+            <p class="text-gray-700">This documentary outlines the reality of undocumented immigrants in the America. Watch this documentary to learn more.</p>
+            <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')" class="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Watch the Documentary</button>        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-2xl font-semibold mb-4">Sources</h2>
+            <p class="text-gray-700">Click to view MLA citations for the information on this page.</p>
+            <a href="sources.html" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 inline-block text-center">See Sources</a>
+        </section>
+        
+    </main>
+
+    <footer class="bg-red-800 text-white p-5 text-center">
+        <p>© 2025 Awareness Initiative. All rights reserved.</p>
+        <p>This website was coded from scratch by Sanjeth Gobinath.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.classList.add("visible");
+                }, index * 200); // Staggered animation
+            });
+
+            const footer = document.querySelector("footer");
+            footer.classList.add("visible");
+        });
+
+        document.getElementById("learn-button").addEventListener("click", () => {
+            window.scrollTo({
+                top: document.querySelector("main").offsetTop,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const ctx = document.getElementById('lineGraph').getContext('2d');
+            const chartHeight = ctx.canvas.height; // Height of the chart
+
+            // Create a gradient for the fill of the first line
+            const gradient1 = ctx.createLinearGradient(0, 0, 0, (chartHeight*4)); // Vertical gradient
+            gradient1.addColorStop(0, 'rgba(255, 0, 0, 0.3)'); // Light red at the top
+            gradient1.addColorStop(1, 'rgba(255, 0, 0, 0)'); // Transparent at the bottom
+
+            // Create a gradient for the fill of the second line
+            const gradient2 = ctx.createLinearGradient(0, 0, 0, (chartHeight*4)); // Vertical gradient
+            gradient2.addColorStop(0, 'rgba(0, 0, 255, 0.3)'); // Light blue at the top
+            gradient2.addColorStop(1, 'rgba(0, 0, 255, 0)'); // Transparent at the bottom
+
+            // Data for the line graph
+            const data = {
+                labels: ['2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032', '2033', '2034', '2035'], // Years extended to 2035
+                datasets: [
+                    {
+                        label: 'Projected GDP Decrease (%)',
+                        data: [0, -1.2, -2.5, -4.2, -5.5, -6.8, -7.0, -7.2, -7.4, -7.5, -7.6], // Extended data for GDP decrease
+                        borderColor: 'rgba(255, 0, 0, 1)', // Red line
+                        backgroundColor: gradient1, // Gradient fill
+                        fill: 'start', // Shade only the area below the line
+                        tension: 0.4, // Smooth curve
+                        pointRadius: 5, // Size of points
+                        pointBackgroundColor: 'rgba(255, 0, 0, 1)', // Point color
+                        yAxisID: 'y', // Link this dataset to the left y-axis
+                    },
+                    {
+                        label: 'Deportation Costs (in $ Billions)',
+                        data: [0, 88, 176, 290, 400, 510, 600, 700, 800, 900, 968], // Gradual increase to 968 by 2035
+                        borderColor: 'rgba(0, 0, 255, 1)', // Blue line
+                        backgroundColor: gradient2, // Gradient fill
+                        fill: 'start', // Shade only the area below the line
+                        tension: 0.4, // Smooth curve
+                        pointRadius: 5, // Size of points
+                        pointBackgroundColor: 'rgba(0, 0, 255, 1)', // Point color
+                        yAxisID: 'y1', // Link this dataset to the right y-axis
+                    }
+                ]
+            };
+
+            // Configuration for the line graph
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Year',
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'GDP Decrease (%)',
+                            },
+                            min: -8, // Adjusted minimum value for y-axis
+                            max: 0, // Maximum value for y-axis
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%'; // Add % to y-axis labels
+                                }
+                            }
+                        },
+                        y1: {
+                            position: 'right', // Place the second y-axis on the right
+                            title: {
+                                display: true,
+                                text: 'Deportation Costs (in $ Billions)',
+                            },
+                            min: 0, // Minimum value for y1-axis
+                            max: 1000, // Maximum value for y1-axis
+                            ticks: {
+                                callback: function(value) {
+                                    if (value === 1000) {
+                                        return '$1T'; // Convert 1000B to 1T
+                                    }
+                                    return '$' + value + 'B'; // Add $ and B to other values
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            // Render the chart
+            new Chart(ctx, config);
+        });
+    </script>
+    
+</body>
+</html>
