@@ -11,28 +11,28 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <header class="hero text-white flex items-center justify-center">
+    <header class="hero text-white flex flex-col items-center justify-center p-6 sm:p-10">
         <div class="text-center">
-            <h1 class="text-8xl font-bold">The Impact of Mass Deportation</h1>
-            <p class="mt-6 text-2xl">Understanding the Impact and Fighting for Change</p>
-            <div class="click-me-container">
-                <p class="click-me-text">Click Me!</p>
-                <img src="arrow.png" alt="Arrow pointing to button" class="click-me-arrow">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-bold">The Impact of Mass Deportation</h1>
+            <p class="mt-4 sm:mt-6 text-lg sm:text-2xl">Understanding the Impact and Fighting for Change</p>
+            <div class="click-me-container mt-4 sm:mt-6 flex flex-col items-center relative" style="margin-left: -30px;">
+                <p class="click-me-text text-sm sm:text-base">Click Me!</p>
+                <img src="arrow.png" alt="Arrow pointing to button" class="click-me-arrow w-8 sm:w-12 animate-bounce">
             </div>
-            <button id="learn-button" class="mt-6 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Learn More</button>
+            <button id="learn-button" class="mt-4 sm:mt-6 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 text-sm sm:text-base">Learn More</button>
         </div>
     </header>
 
-    <main class="p-10 grid grid-cols-1 md:grid-cols-2 gap-8" style="background-image: linear-gradient(rgba(102, 28, 29, 2), rgba(255, 255, 255, 1));">
-        <section class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-semibold mb-4">Overview</h2>
-            <img src="immigrants.jpg" alt="Overview Image" class="mb-4 rounded-lg shadow-md" >
-            <p class="text-gray-700">Mass deportation policies have had significant impacts on families, communities, and the broader social fabric. This site aims to shed light on the statistics, real stories, and historical context of mass deportation, empowering you to understand and act.</p>
+    <main class="p-4 sm:p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" style="background-image: linear-gradient(rgba(102, 28, 29, 2), rgba(255, 255, 255, 1));">
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">Overview</h2>
+            <img src="immigrants.jpg" alt="Overview Image" class="mb-4 rounded-lg shadow-md w-full h-auto">
+            <p class="text-gray-700 text-sm sm:text-base">Mass deportation policies have had significant impacts on families, communities, and the broader social fabric. This site aims to shed light on the statistics, real stories, and historical context of mass deportation, empowering you to understand and act.</p>
         </section>
 
-        <section class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-semibold mb-4">Statistics & Economic Impact</h2>
-            <ul class="list-disc list-inside text-gray-700">
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">Statistics & Economic Impact</h2>
+            <ul class="list-disc list-inside text-gray-700 text-sm sm:text-base">
                 <li>One-time deportation of 13.3 million people would cost at least $315 billion, while long-term deportation would cost $88 billion annually. Over a decade, the cost is estimated at $967.9 billion.</li>
                 <li>The cost exceeds budgets for key national programs such as NASA, child nutrition, and cancer research.</li>
                 <li>Disruption to industries like construction, agriculture, and hospitality.</li>
@@ -41,53 +41,52 @@
             </ul>
         </section>
 
-        <section class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-semibold mb-4">Human Impact & Legal Concerns</h2>
-            <ul class="list-disc list-inside text-gray-700">
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">Human Impact & Legal Concerns</h2>
+            <ul class="list-disc list-inside text-gray-700 text-sm sm:text-base">
                 <li>4 million mixed-status families would be separated, affecting 5.1 million US citizen children, leading to emotional and financial hardship.</li>
-                <li>Trump’s administration deported at least 3 US citizen children (ages 2, 4, and 7); the 2-year-old New Orleans-born toddler was receiving cancer treatment before deportation</li>
+                <li>Trump’s administration deported at least 3 US citizen children (ages 2, 4, and 7); the 2-year-old New Orleans-born toddler was receiving cancer treatment before deportation.</li>
                 <li>Judge Terry Doughterty of the Western District of Louisiana stated, “Of course it is illegal and unconstitutional to detain or recommend deportation of a US citizen.” He criticized the government for deporting a citizen without a meaningful process.</li>
             </ul>
         </section>
 
-        <section class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-semibold mb-4">International Impact</h2>
-            <img src="salvador.jpg" alt="International Impact Image" class="mb-4 rounded-lg shadow-md">
-            <p class="text-gray-700">Since the start of 2025, there have been over 350 deportation flights. On March 15, Trump invoked the 1798 Alien Enemies Act to deport alleged gang members from Venezuela to El Salvador, even if it wasn't their country of origin.</p>
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">International Impact</h2>
+            <img src="salvador.jpg" alt="International Impact Image" class="mb-4 rounded-lg shadow-md w-full h-auto">
+            <p class="text-gray-700 text-sm sm:text-base">Since the start of 2025, there have been over 350 deportation flights. On March 15, Trump invoked the 1798 Alien Enemies Act to deport alleged gang members from Venezuela to El Salvador, even if it wasn't their country of origin.</p>
         </section>
 
-        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
-            <h2 class="text-2xl font-semibold mb-4">Real Impacts</h2>
-            <p class="text-gray-700 italic mb-4">"It's too much, I don't like the way he is deporting everybody. I understand his reasoning but there are better ways to go about this"</p> 
-            <p class="text-gray-700 italic mb-4">"They're separating hard working, honest people who've escaped from turmoil, only to get sent back?"</p>
-            <p class="text-gray-700 italic mb-4">"Every day there's a chance that ICE will arrest me or someone in my family. They're even deporting U.S. citizens, I'm pretty sure they can't do that."</p>
-            <p class="text-gray-700 italic mb-4">"Trump is a very powerful person, all we can do is pray and protest."</p>
-            <p></p>
-            <p class="text-gray-700 italic mb-4 font-bold" style="text-align: left; margin-left: 33%;">-Eliezer Rodriguez</p>
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">Real Impacts</h2>
+            <p class="text-gray-700 italic mb-4 text-sm sm:text-base">"It's too much, I don't like the way he is deporting everybody. I understand his reasoning but there are better ways to go about this."</p>
+            <p class="text-gray-700 italic mb-4 text-sm sm:text-base">"They're separating hard working, honest people who've escaped from turmoil, only to get sent back?"</p>
+            <p class="text-gray-700 italic mb-4 text-sm sm:text-base">"Every day there's a chance that ICE will arrest me or someone in my family. They're even deporting U.S. citizens, I'm pretty sure they can't do that."</p>
+            <p class="text-gray-700 italic mb-4 text-sm sm:text-base">"Trump is a very powerful person, all we can do is pray and protest."</p>
+            <p class="text-gray-700 italic mb-4 font-bold text-sm sm:text-base" style="text-align: left; margin-left: 33%;">-Eliezer Rodriguez</p>
         </section>
 
-        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
-            <h2 class="text-2xl font-semibold mb-4">Projected US Economy Decrease vs The Great Recession (2008)</h2>
-            <p class="text-gray-700">The graph below shows the projected decrease in the US economy due to mass deportation compared to if the Great Recession in 2008 happened again. Values are  not exact and are for illustrative purposes only.</p>
-            <canvas id="lineGraph" width="400" height="200"></canvas>
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">Projected US Economy Decrease vs The Great Recession (2008)</h2>
+            <p class="text-gray-700 text-sm sm:text-base">The graph below shows the projected decrease in the US economy due to mass deportation compared to if the Great Recession in 2008 happened again. Values are not exact and are for illustrative purposes only.</p>
+            <canvas id="lineGraph" class="w-full h-auto"></canvas>
         </section>
 
-        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
-            <h2 class="text-2xl font-semibold mb-4">See the Injustice</h2>
-            <p class="text-gray-700">This documentary outlines the reality of undocumented immigrants in the America. Watch this documentary to learn more.</p>
-            <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')" class="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Watch the Documentary</button>        </section>
-
-        <section class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
-            <h2 class="text-2xl font-semibold mb-4">Sources</h2>
-            <p class="text-gray-700">Click to view MLA citations for the information on this page.</p>
-            <a href="sources.html" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 inline-block text-center">See Sources</a>
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">See the Injustice</h2>
+            <p class="text-gray-700 text-sm sm:text-base">This documentary outlines the reality of undocumented immigrants in America. Watch this documentary to learn more.</p>
+            <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')" class="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 text-sm sm:text-base">Watch the Documentary</button>
         </section>
-        
+
+        <section class="bg-white p-4 sm:p-6 rounded-lg shadow-lg md:col-span-2">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">Sources</h2>
+            <p class="text-gray-700 text-sm sm:text-base">Click to view MLA citations for the information on this page.</p>
+            <a href="sources.html" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 inline-block text-center text-sm sm:text-base">See Sources</a>
+        </section>
     </main>
 
-    <footer class="bg-red-800 text-white p-5 text-center">
-        <p>© 2025 Awareness Initiative. All rights reserved.</p>
-        <p class="font-bold">This website was coded from scratch by Sanjeth Gobinath.</p>
+    <footer class="bg-red-800 text-white p-4 sm:p-5 text-center">
+        <p class="text-sm sm:text-base">© 2025 Awareness Initiative. All rights reserved.</p>
+        <p class="font-bold text-sm sm:text-base">This website was coded from scratch by Sanjeth Gobinath.</p>
     </footer>
 
     <script>
